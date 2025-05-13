@@ -35,8 +35,9 @@
         <div class="logo-container">
         <img src="../ASSET/JELAJAHKU-LOGO.png" width="150vh">
         </div>
-        <div class="search">
-            <input type="text" placeholder="Mau Kemana?">
+       <div class="search">
+            <input type="text" id="searchInput" placeholder="Mau Kemana?">
+            <div id="searchResults" class="search-results"></div>
         </div>
         <nav>
             <ul>
@@ -61,11 +62,11 @@
         </div>
     </header>
 
-    <div class="link-page-before">
+    <div id="mainContent">
+     <div class="link-page-before">
         <p><a href="#">> Destinasi</a></p>
         <p><a href="#">> Gunung Prau</a></p>
     </div>
-
     <div class="judul-artikel">
         <h1>Gunung Prau</h1>
     </div>
@@ -189,7 +190,41 @@
         </ul>
         </div>
     </footer>
+    </div>
 
+    <!-- JAVASCRIPT -->
+
+  <script src="../JS/script-search.js"></script>
+
+  <script type="module">
+  import { renderCards } from '../JS/script-render-card.js';
+
+  const input = document.getElementById("searchInput");
+  const resultsContainer = document.getElementById("searchResults");
+  const mainContent = document.getElementById("mainContent");
+
+  input.addEventListener("input", function () {
+    const query = this.value.toLowerCase().trim();
+
+    if (query === "") {
+      resultsContainer.innerHTML = "";
+      resultsContainer.style.display = "none";
+      mainContent.style.display = "block";
+    } else {
+      renderCards("#searchResults", query); // render berdasarkan input
+      resultsContainer.style.display = "flex";
+      mainContent.style.display = "none";
+    }
+  });
+</script>
+
+
+    <script type="module">
+    import { renderCards } from '../JS/script-render-card.js';
+
+    renderCards("#gunungContainer", "Gunung");
+    renderCards("#pantaiContainer", "Pantai");
+</script>
     <script src="../JS/script-artikel-gunung-prau.js"></script>
 
     <script type="module">

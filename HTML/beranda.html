@@ -35,12 +35,13 @@
     <img id="profile-pic" src="../ASSET/profile-icon-removebg-preview.png">
     <!-- <a href="../HTML/profile.html"> -->
         <span id="user-name"></span>
-    </a>
+        <!-- <div class="arrow-dropdown">⮟</div>  -->
     </div>
         <div class="dropdown-content">
             <button id="logout-button">LOGOUT</button>
         </div>
     </div>
+    
     <script src="../JS/script-logout.js" defer type="module"></script>
 
      <div class="auth-buttons" id="auth-buttons">
@@ -215,7 +216,38 @@
     </footer>
 </div>
 
+<!-- SCRIPT JAVASCRIPT -->
 <script src="../JS/script-search.js"></script>
+
+<script type="module">
+  import { renderCards } from '../JS/script-render-card.js';
+
+  const input = document.getElementById("searchInput");
+  const resultsContainer = document.getElementById("searchResults");
+  const mainContent = document.getElementById("mainContent");
+
+  input.addEventListener("input", function () {
+    const query = this.value.toLowerCase().trim();
+
+    if (query === "") {
+      resultsContainer.innerHTML = "";
+      resultsContainer.style.display = "none";
+      mainContent.style.display = "block";
+    } else {
+      renderCards("#searchResults", query); // render berdasarkan input
+      resultsContainer.style.display = "flex";
+      mainContent.style.display = "none";
+    }
+  });
+</script>
+
+
+    <script type="module">
+    import { renderCards } from '../JS/script-render-card.js';
+
+    renderCards("#gunungContainer", "Gunung");
+    renderCards("#pantaiContainer", "Pantai");
+</script>
 
 <script>
   // Ambil informasi pengguna dari localStorage

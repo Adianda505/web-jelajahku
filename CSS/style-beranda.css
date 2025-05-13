@@ -124,6 +124,7 @@ nav ul li:hover::after {
 /* #mainContent{
     display: none;
 } */
+ 
 .judul {
     height: 30vh;
     background-size: cover;
@@ -481,6 +482,14 @@ footer {
     font-weight: bold;
 }
 
+.user-info:hover{
+    cursor: pointer;
+}
+
+.arrow-dropdown{
+    color: #f9f9f9;
+    font-size: 20px;
+}
 .auth-buttons {
     display: flex;
     gap: 10px;
@@ -513,31 +522,32 @@ footer {
       display: none;
       background-color: #f9f9f9;
       position: absolute;
-      margin-left: px;
+      margin-left: 45px;
       min-width: 100px;
       box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
       z-index: 1;
-      border-radius: 10px;
     }
 
     .dropdown-content button{
+       font-family: "Inter", sans-serif;;
        border: none;
        text-decoration: none;
+       width: auto;
+       height: auto;
        background-color: transparent;
        margin-left: 5px;
+       font-size: 15px;
+       font-weight: bold;
     }
 
-    /* Link dalam dropdown */
-    /* .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    } */
+    .arrow-dropdown:hover{
+        cursor: pointer;
+    }
 
     .dropdown-content button:hover {
       /* background-color: #ddd; */
       cursor: pointer;
+      background-color: #ddd;
     }
 
     /* Tampilkan dropdown saat hover */

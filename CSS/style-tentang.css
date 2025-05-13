@@ -236,3 +236,36 @@ footer {
     padding: 10px 20px;
     font-size: 16px;
 }
+
+.container-img-pantai {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card-Pantai {
+  width: 200px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+.card-Pantai img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.search-results {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    max-height: 550px;
+    overflow-y: auto;
+    display: none;
+    position: absolute;
+    left: 50px;
+    z-index: -1;
+    top: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+}
