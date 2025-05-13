@@ -1,0 +1,31 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+  
+    const firebaseConfig = {
+      apiKey: "AIzaSyB87nR4cNNbWOJMcJ_GB4lQdIR-y1yRjeo",
+      authDomain: "jelajahku-login-goggle.firebaseapp.com",
+      projectId: "jelajahku-login-goggle",
+      storageBucket: "jelajahku-login-goggle.appspot.com",
+      messagingSenderId: "613984185039",
+      appId: "1:613984185039:web:27fabd76a14fda394de5ba"
+    };
+  
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+  
+    const logoutBtn = document.getElementById("logout-button");
+  
+    if (logoutBtn) {
+      logoutBtn.addEventListener("click", () => {
+        signOut(auth).then(() => {
+          // Hapus data dari localStorage
+          localStorage.removeItem("user");
+  
+          // Arahkan ke halaman login atau beranda
+          window.location.href = "../HTML/login.html";
+        }).catch((error) => {
+          console.error("Logout gagal:", error);
+          alert("Terjadi kesalahan saat logout.");
+        });
+      });
+    }

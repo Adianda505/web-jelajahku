@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang</title>
+    <link rel="stylesheet" href="../CSS/style-tentang.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+        <img src="../ASSET/JELAJAHKU-LOGO.png" width="150vh">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Mau Kemana?">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../HTML/beranda.html">Beranda</a></li>
+                <li><a href="../HTML/destinasi.html">Destinasi</a></li>
+                <li><a href="../HTML/tentang.html">Tentang</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+
+        <div class="user-info" id="user-info" style="display: none;">
+            <img id="profile-pic" src="../ASSET/naturhike - logo.jpg">
+            <a href="../HTML/profile.html">
+            <span id="user-name"></span>
+            </a>
+        </div>
+
+        <div class="auth-buttons" id="auth-buttons">
+        <div class="log-or-reg">
+            <a href="../HTML/login.html">Masuk / Daftar</a>
+        </div>
+        </div>
+    </header>
+
+    <section class="judul">
+        <div class="judul-isi">
+            <h1>Tentang Kita</h1>
+        </div>
+        <div class="penjelasan">
+            <p>Website kami menyediakan info tentang wisata yang akan anda kunjungi, dijamin akurat dan terpercaya </p>
+        </div>
+    </section>
+
+    <div class="card-img-tentang">
+            <img src="../ASSET/gunung card/gede.jpg">
+             <img src="../ASSET/pantai card/pandawa.png">
+              <img src="../ASSET/gunung card/gunung merbabu.jpeg">
+               <img src="../ASSET/pantai card/pangandaran.jpg">
+    </div>
+
+    <!-- <div class="logo-bawah">
+        <img src="../ASSET/JELAJAHKU-LOGO.png" alt="">
+    </div> -->
+
+    <footer>
+        <div class="logo-in-footer">
+            <img src="../ASSET/JELAJAHKU-LOGO.png" alt="" srcset="">
+            </div>
+        <div class="copyright">
+        <h4>copyright©officialjelajahku</h4>
+        </div>
+
+        <div class="list-footer">
+        <ul><h2>Our Service</h2>
+            <li>Tentang Kami</li>
+            <li>Pusat Bantuan</li>
+            <li>Login</li>
+        </ul>
+    
+        <ul><h2>Ikuti Kami</h2>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+        </ul>
+
+        <ul id="kontak"><h2>Kontak Kami</h2>
+            <li>Telp  : 081234567890</li>
+            <li>Email : jelajahkuofficial@gmail.com </li>
+        </ul>
+        </div>
+    </footer>
+
+
+    <!-- <script src="../JS/script-beranda.js"></script> -->
+    <script>
+        // Ambil informasi pengguna dari localStorage
+        const user = JSON.parse(localStorage.getItem('user'));
+
+        if (user) {
+            // Tampilkan profil pengguna
+            document.getElementById('user-info').style.display = 'flex';
+            document.getElementById('profile-pic').src = user.photoURL || '../ASSET/naturhike - logo.jpg';
+            document.getElementById('user-name').textContent = user.name;
+
+            // Sembunyikan tombol Masuk/Daftar
+            document.getElementById('auth-buttons').style.display = 'none';
+        } else {
+            // Jika pengguna belum login, tampilkan tombol Masuk/Daftar
+            document.getElementById('user-info').style.display = 'none';
+            document.getElementById('auth-buttons').style.display = 'flex';
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gunung Prau</title>
+    <link rel="stylesheet" href="../CSS/style-artikel-gunung-prau.css">
+
+    <!-- <style>
+      #loading-screen {
+        position: fixed;
+        background: white;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+        font-size: 24px;
+      }
+    </style>
+     <div id="loading-screen">
+      <h1>Harap Login Terlebih Dahulu</h1>
+      <a href="../HTML/login.html">
+      <button>LOGIN</button>
+      </a>
+      </div> -->
+</head>
+<body>
+
+ 
+
+    <header>
+        <div class="logo-container">
+        <img src="../ASSET/JELAJAHKU-LOGO.png" width="150vh">
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Mau Kemana?">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../HTML/beranda.html">Beranda</a></li>
+                <li><a href="../HTML/destinasi.html">Destinasi</a></li>
+                <li><a href="../HTML/tentang.html">Tentang</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+
+        <div class="user-info" id="user-info" style="display: none;">
+            <img id="profile-pic" src="../ASSET/naturhike - logo.jpg">
+            <a href="../HTML/profile.html">
+            <span id="user-name"></span>
+            </a>
+        </div>
+
+        <div class="auth-buttons" id="auth-buttons">
+        <div class="log-or-reg">
+            <a href="../HTML/login.html">Masuk / Daftar</a>
+        </div>
+        </div>
+    </header>
+
+    <div class="link-page-before">
+        <p><a href="#">> Destinasi</a></p>
+        <p><a href="#">> Gunung Prau</a></p>
+    </div>
+
+    <div class="judul-artikel">
+        <h1>Gunung Prau</h1>
+    </div>
+
+    <div class="img-object-artikel">
+        <img src="https://shelterjelajah.com/wp-content/uploads/2024/09/Fakta-Menarik-Gunung-Prau.jpeg" alt="gunung-prau">
+        <div class="rating">
+        <p>&#9733;</p>
+        <p>&#9733;</p>
+        <p>&#9733;</p>
+        <p>&#9733;</p>
+        <p>&#10032;</p>
+        <p class="rating-angka" style="color : #000; font-size: 40px"><b>4.92</b></p>
+        </div>
+    </div>
+
+    <div class="tentang-gunug">
+        <div class="penjelasan">
+        <h1>Tentang Gunung</h1>
+        <p style="padding-left: 20px;">Gunung Prau terkenal sebagai destinasi pendakian ramah bagi pemula yang berlokasi di Provinsi Jawa Tengah, 
+        Indonesia. Gunung ini menawarkan pengalaman mendaki yang menarik dengan pemandangan indah dan memukau.</p>
+        </div>
+    </div>
+
+    <div class="alamat-lokasi">
+        <h1>Alamat Dan Rute Lokasi</h1>
+        <img src="../ASSET/prau-info.jpg">
+        <div id="konten"></div>
+    </div>
+    <script src="../JS/script-artikel-gunung-prau.js"></script>
+
+    <div class="garis-pemisah">
+    <h1>pisah</h1>
+    </div>
+
+    <div class="tiket-sect">
+        <h1>Harga Tiket Masuk</h1>
+        <img src="../ASSET/tiket-prau.jpg">
+    </div>
+
+    <div class="penjelasan-tiket">
+        <p>Ada beberapa destinasi wisata yang memasang tarif tiket masuk berbeda-beda pada hari minggu, hari libur dan hari biasa.
+         Untuk Harga Tiket Masuk Gunung Prau yaitu sebesar Rp. 10.000. Harga tiket tersebut berlaku untuk weekdays maupun weekend.
+        </p>
+    </div>
+
+    <div class="garis-pemisah">
+        <h1>pisah</h1>
+    </div>
+
+    <h1 class="infor-pendakian">Info Pendakian Gunung Prau</h1>
+    <p class="penjelasan-infor">Ada beberapa jalur yang dapat anda pilih sesuai dengan keinginan :</p>
+
+    <div class="info-jalur-pendakian">
+        
+        <div class="sub-infor-jalur-pendakian">
+            <h1 class="jalur-title">
+              <span class="number">1</span>
+              <span class="text">Jalur Pendakian Via Patak</span>
+            </h1>
+            <img src="../ASSET/via vatak.jpg" alt="Jalur Via Patak">
+            <div id="via-vatak-text"></div>
+          </div>
+        
+          <div class="sub-infor-jalur-pendakian">
+            <h1 class="jalur-title">
+              <span class="number">2</span>
+              <span class="text">Jalur Pendakian Via Dieng Kulon</span>
+            </h1>
+            <img src="../ASSET/Dieng kulon.JPG" alt="Jalur Via Dieng Kulon">
+            <div id="via-dieng-kulon-text"></div>
+          </div>
+
+          <div class="sub-infor-jalur-pendakian">
+            <h1 class="jalur-title">
+              <span class="number">3</span>
+              <span class="text">Jalur Pendakian Via Kalilembu</span>
+            </h1>
+            <img src="../ASSET/via kalilembu.jpg" alt="Jalur Via Patak">
+            <div id="via-kalilembu-text"></div>
+          </div>
+
+          <div class="sub-infor-jalur-pendakian">
+            <h1 class="jalur-title">
+              <span class="number">4</span>
+              <span class="text">Jalur Pendakian Via Wates</span>
+            </h1>
+            <img src="../ASSET/via wates.jpg" alt="Jalur Via Patak">
+            <div id="via-wates-text"></div>
+          </div>
+    </div>
+     <p class="text-akhir-artikel">Gunung Prau dapat menjadi pilihan Anda yang menginginkan wisata yang berbeda dari sebelum-sebelumnya. 
+        Berbagai jalur pendakian dapat dipilih sesuai selera yang akan memudahkan Anda untuk sampai di puncak gunung prau. 
+        Nikmati suasana berbeda dengan keindahan alam yang begitu indah dan eksotis di wisata ini.
+    </p>
+
+    <footer>
+        <div class="logo-in-footer">
+            <img src="../ASSET/JELAJAHKU-LOGO.png" alt="" srcset="">
+            </div>
+        <div class="copyright">
+        <h4>copyright©officialjelajahku</h4>
+        </div>
+
+        <div class="list-footer">
+        <ul><h2>Our Service</h2>
+            <li>Tentang Kami</li>
+            <li>Pusat Bantuan</li>
+            <li>Login</li>
+        </ul>
+    
+        <ul><h2>Ikuti Kami</h2>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+        </ul>
+
+        <ul id="kontak"><h2>Kontak Kami</h2>
+            <li>Telp  : 081234567890</li>
+            <li>Email : jelajahkuofficial@gmail.com </li>
+        </ul>
+        </div>
+    </footer>
+
+    <script src="../JS/script-artikel-gunung-prau.js"></script>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+      import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+    
+      const firebaseConfig = {
+        apiKey: "AIzaSyB87nR4cNNbWOJMcJ_GB4lQdIR-y1yRjeo",
+        authDomain: "jelajahku-login-goggle.firebaseapp.com",
+        projectId: "jelajahku-login-goggle",
+        storageBucket: "jelajahku-login-goggle.appspot.com",
+        messagingSenderId: "613984185039",
+        appId: "1:613984185039:web:27fabd76a14fda394de5ba"
+      };
+    
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+    
+      // Tunggu Firebase Auth selesai
+      onAuthStateChanged(auth, (user) => {
+        if (user) {
+          document.body.style.display = "block";
+          // Sembunyikan layar loading
+          document.getElementById('loading-screen').style.display = 'none';
+          
+          const localUser = JSON.parse(localStorage.getItem('user'));
+          if (localUser) {
+            document.getElementById('user-info').style.display = 'flex';
+            document.getElementById('profile-pic').src = localUser.photoURL;
+            document.getElementById('user-name').textContent = localUser.name;
+            document.getElementById('auth-buttons').style.display = 'none';
+          }
+        } else {
+          // Belum login, redirect
+          localStorage.setItem('redirectAfterLogin', window.location.href);
+          document.body.style.display= "block";
+          window.location.href = "../HTML/login.html";
+        }
+      });
+    </script>
+
+    
+  
+    <script>
+        // Ambil informasi pengguna dari localStorage
+        const user = JSON.parse(localStorage.getItem('user'));
+
+        if (user) {
+            // Tampilkan profil pengguna
+            document.getElementById('user-info').style.display = 'flex';
+            document.getElementById('profile-pic').src = user.photoURL || '../ASSET/naturhike - logo.jpg';
+            document.getElementById('user-name').textContent = user.name;
+
+            // Sembunyikan tombol Masuk/Daftar
+            document.getElementById('auth-buttons').style.display = 'none';
+        } else {
+            // Jika pengguna belum login, tampilkan tombol Masuk/Daftar
+            document.getElementById('user-info').style.display = 'none';
+            document.getElementById('auth-buttons').style.display = 'flex';
+        }
+    </script>
+    
+</body>
+</html>

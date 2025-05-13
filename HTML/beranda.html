@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Beranda</title>
+    <link rel="stylesheet" href="../CSS/style-beranda.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo-container">
+          <div class="logo">
+        <img src="../ASSET/JELAJAHKU-LOGO.png" width="150vh">
+          </div>
+        </div> 
+        
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Mau Kemana?">
+            <div id="searchResults" class="search-results"></div>
+        </div>
+
+        <nav>
+            <ul>
+                <li class="beranda"><a href="../HTML/beranda.html">Beranda</a></li>
+                <li class="destinasi"><a href="../HTML/destinasi.html">Destinasi</a></li>
+                <li><a href="../HTML/tentang.html">Tentang</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+
+    <div class="dropdown">
+    <div class="user-info" id="user-info" style="display: none;">
+    <img id="profile-pic" src="../ASSET/profile-icon-removebg-preview.png">
+    <!-- <a href="../HTML/profile.html"> -->
+        <span id="user-name"></span>
+    </a>
+    </div>
+        <div class="dropdown-content">
+            <button id="logout-button">LOGOUT</button>
+        </div>
+    </div>
+    <script src="../JS/script-logout.js" defer type="module"></script>
+
+     <div class="auth-buttons" id="auth-buttons">
+        <div class="log-or-reg">
+            <a href="login.html">Masuk / Daftar</a>
+        </div>
+    </div>
+    </header>
+
+<div id="mainContent">
+    <section class="judul">
+        <div class="judul-isi">
+            <h1>Selamat datang di</h1>
+            <h2 class="judul-web">JELAJAHKU</h2>
+        </div>
+    </section>
+
+
+    <div class="carousel">
+    <div class="carousel-track">
+        <div class="destinasi-img">
+            <img src="../ASSET/gunung-prau-display.jpeg" class="carousel-image" alt="gambar-1" >
+            <div class="img-text">Gunung Prau</div>
+            <div class="detail-info"><a href="../HTML/artikel-gunung-prau.html"><button>Info Detail</button></a></div>
+        </div>
+        <div class="destinasi-img">
+            <img src="../ASSET/Gunung Gede Display.jpeg" class="carousel-image" alt="gambar-2">
+            <div class="img-text">Gunung Gede</div>
+            <div class="detail-info"><a href="../HTML/artikel-gunung-prau.html"><button>Info Detail</button></a></div>
+        </div>
+        <div class="destinasi-img">
+            <img src="../ASSET/pantai kuta.jpg" class="carousel-image"  alt="gambar-3">
+            <div class="img-text">Pantai Kuta</div>
+            <div class="detail-info"><a href="../HTML/artikel-gunung-prau.html"><button>Info Detail</button></a></div>
+        </div>
+    </div>
+    </div>
+
+    <button class="carousel-button prev">❮</button>
+    <button class="carousel-button next">❯</button>
+    <script src="../JS/script-beranda.js"></script>
+    <section class="web-describe">
+        <p class="text-penjelasan"><b>Website yang menampilkan data gunung terlengkap se-Indonesia mencakup lokasi, ketinggian gunung dan opsi jalur pendakian.</b></p>
+    </section>
+
+    <section class="sponsor">
+        <img src="../ASSET/eiger - logo.webp">
+        <img src="../ASSET/naturhike - logo.jpg">
+        <img src="../ASSET/rei - logo.png" style="margin-top: 10px;">
+    </section>
+
+    <!-- Gunung -->
+    <section class="content-first-gunung">
+        <div class="content-pantai">
+            <h2>Gunung Populer</h2>
+            <p>Gunung yang paling banyak di kunjungi oleh member jelajahku.</p>
+    
+        <div class="container-img-pantai">
+            <div class="card-Pantai">
+                <img src="../ASSET/gunung card/gunung merbabu.jpeg">
+                <h3>Gunung  merbabu</h3>
+                <pre class="rating-card-obj">&#11088; 4.95     &#x2665;350</pre>
+            </div>
+            <div class="card-Pantai">
+                <img src="../ASSET/gunung card/Gunung-Kerinci.png">
+                <h3>Gunung Kerinci</h3>
+                <pre class="rating-card-obj">&#11088; 4.95     &#x2665;350</pre>
+            </div>
+            <div class="card-Pantai">
+                <img src="../ASSET/gunung card/bromo.jpg">
+                <h3>Gunung Bromo</h3>
+                <pre class="rating-card-obj">&#11088; 4.95     &#x2665;350</pre>
+            </div>
+            <div class="card-Pantai">
+                <img src="../ASSET/gunung card/gede.jpg">
+                <h3>Gunung Gede</h3>
+                <pre class="rating-card-obj">&#11088; 4.95     &#x2665;350</pre>
+            </div>
+            <div class="card-Pantai">
+                <a href="../HTML/artikel-gunung-prau.html">
+                <img src="../ASSET/gunung card/prau.jpg">
+                </a>
+                <a href="../HTML/artikel-gunung-prau.html">
+                <h3>Gunung Prau</h3>
+                </a>
+                <pre class="rating-card-obj">&#11088; 4.95     &#x2665;350</pre>
+            </div>
+            <div class="card-Pantai">
+                <img src="../ASSET/gunung card/sindoro.jpg">
+                <h3>Gunung Sindoro</h3>
+                <pre class="rating-card-obj">&#11088; 4.95     &#x2665;350</pre>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="border">
+        <h1>.</h1>
+    </section>
+
+    <section class="content-first-pantai">
+        <div class="content-pantai">
+            <h2 style="color: #f9f9f9;">Pantai Populer</h2>
+            <p>Pantai yang paling banyak di kunjungi oleh member jelajahku.</p>
+        
+        <div class="container-img-pantai">
+            <div class="card-Pantai">
+                <img src="../ASSET/pantai card/anyer.jpg">
+                <h3>Pantai Anyer</h3>
+                <pre class="rating-card-obj">&#11088; 4.95     &#x2665;350</pre>
+            </div>
+            <div class="card-Pantai">
+                <img src="../ASSET/pantai card/pangandaran.jpg">
+                <h3>Pantai Pangandaran</h3>
+                <pre class="rating-card-obj">&#11088; 4.95     &#x2665;350</pre>
+            </div>
+            <div class="card-Pantai">
+                <img src="../ASSET/pantai card/kuta.jpg">
+                <h3>Pantai Kuta</h3>
+                <pre class="rating-card-obj">&#11088; 4.95     &#x2665;350</pre>
+            </div>
+            <div class="card-Pantai">
+                <img src="../ASSET/pantai card/pandawa.png">
+                <h3>Pantai Pandawa</h3>
+                <pre class="rating-card-obj">&#11088; 4.95     &#x2665;350</pre>
+            </div>
+            <div class="card-Pantai">
+                <img src="../ASSET/pantai card/pantai-parangtritis.png">
+                <h3>Pantai Parangtritis</h3>
+                <pre class="rating-card-obj">&#11088; 4.95     &#x2665;350</pre>
+            </div>
+            <div class="card-Pantai">
+                <img src="../ASSET/pantai card/gunung kidul.png">
+                <h3>Pantai Gunung kidul</h3>
+                <pre class="rating-card-obj">&#11088; 4.95     &#x2665;350</pre>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="border">
+        <h1>.</h1>
+    </section>
+
+    <footer>
+        <div class="logo-in-footer">
+            <img src="../ASSET/JELAJAHKU-LOGO.png" alt="" srcset="">
+            </div>
+        <div class="copyright">
+        <h4>copyright©officialjelajahku</h4>
+        </div>
+
+        <div class="list-footer">
+        <ul><h2>Our Service</h2>
+            <li>Tentang Kami</li>
+            <li>Pusat Bantuan</li>
+            <li>Login</li>
+        </ul>
+    
+        <ul><h2>Ikuti Kami</h2>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+        </ul>
+
+        <ul id="kontak"><h2>Kontak Kami</h2>
+            <li>Telp  : 081234567890</li>
+            <li>Email : jelajahkuofficial@gmail.com </li>
+        </ul>
+        </div>
+    </footer>
+</div>
+
+<script src="../JS/script-search.js"></script>
+
+<script>
+  // Ambil informasi pengguna dari localStorage
+  const user = JSON.parse(localStorage.getItem('user'));
+
+  // Cek apakah data pengguna ada
+  if (user) {
+    // Tampilkan elemen profil pengguna jika tersedia
+    const userInfo = document.getElementById('user-info');
+    const userNameEl = document.getElementById('user-name');
+    const authButtons = document.getElementById('auth-buttons');
+    // const profilePic = document.getElementById('profile-pic');
+
+    if (userInfo) userInfo.style.display = 'flex';
+    if (authButtons) authButtons.style.display = 'none';
+    if (userNameEl) userNameEl.textContent = user.name || 'Pengguna';
+    // if (profilePic) profilePic.src = user.photoURL || '../ASSET/profile-icon.png';
+  } else {
+    // Tampilkan tombol Masuk/Daftar
+    const userInfo = document.getElementById('user-info');
+    const authButtons = document.getElementById('auth-buttons');
+
+    if (userInfo) userInfo.style.display = 'none';
+    if (authButtons) authButtons.style.display = 'flex';
+  }
+</script>
+
+</body>
+</html>

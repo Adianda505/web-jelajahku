@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    font-family: "Inter", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+header{
+    text-decoration: none;
+    background-color: #292828;
+    padding: 10px 20px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.search input{
+    width: 350px;
+    padding: 10px 15px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    margin-left: -10vh;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li{
+    margin-left: 25px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #f9f9f9;
+    font-weight: bold;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Sesuaikan dengan kebutuhan */
+    left: 0;
+    width: 0;
+    height: 3px; /* Ketebalan garis */
+    background-color: #f9f9f9;
+    transition: width 0.1s ease-in-out;
+    border-radius: 5px;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+.log-or-reg a{
+    text-decoration: none ;
+    color: rgb(0, 0, 0);
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin-right: 50px;
+}
+
+.link-page-before{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    position: relative;
+    left: 5vw;
+}
+
+.link-page-before a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.judul-artikel{
+    text-align: center;
+}
+
+.img-object-artikel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.img-object-artikel img{
+    width: 1000px;
+    height: 500px;
+    border-radius: 20px;
+    margin-top: -20vh;
+    /* margin-bottom: 150px; */
+}
+
+.rating{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 115vh;
+    right: 45vh;
+    font-size: 50px;
+    color: #FFD700;
+}
+
+.rating-angka{
+    font-size: 45px;
+    position: absolute;
+    top: 3.7vh;
+    left: 35vh;
+}
+
+/* .tentang-gunung{
+    background-color:;
+} */
+
+.penjelasan{
+    background-color: #5C693A;
+    color: #f9f9f9;
+    height: 20vh;
+}
+
+.penjelasan h1{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.alamat-lokasi{
+    text-align: center;
+}
+
+.alamat-lokasi img{
+    width: 50%;
+}
+.alamat-lokasi h1{
+    font-size: 29px;
+}
+
+#konten{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 65px;
+    font-size: 15px;
+}
+
+.garis-pemisah{
+    background-color: #5C693A;
+    opacity: 41%;
+    height: 13px;
+}
+
+.garis-pemisah h1{
+    opacity: 0;
+}
+
+.tiket-sect{
+    text-align: center;
+    justify-content: center;
+}
+
+.tiket-sect img{
+    width: 50%;
+}
+
+.penjelasan-tiket{
+    text-align: left;
+    padding-top: 20px;
+    margin-left: 65px;
+    line-height: 2;
+    font-size: 15px;
+}
+
+.infor-pendakian{
+    text-align: center;
+}
+
+.penjelasan-infor{
+    text-align: left;
+    margin-left: 65px;
+}
+
+.info-jalur-pendakian{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(445px, 1fr));
+    justify-content: center;
+    gap: 20px;
+}
+
+.sub-infor-jalur-pendakian{
+   text-align: center;
+}
+
+.sub-infor-jalur-pendakian h1{
+    /* background-color: #395052;
+    background-size: 25px 25px;
+    height: 25px; */
+    font-size: 32px;
+}
+
+
+.jalur-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left:90px;
+    font-size: 24px;
+    gap: 10px; /* Jarak antara nomor dan teks */
+  }
+  
+  .jalur-title .number {
+    background-color: #395052; /* warna background nomor */
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .jalur-title .text {
+    color: #333;
+  }
+  
+
+.number{
+    text-align: center;
+    /* background-color: #395052; */
+    /* width: 25px; */
+    height: 25px;
+    border-radius: 100px;
+}
+
+.info-jalur-pendakian img{
+    width: 50%;
+}
+
+#via-vatak-text{
+    text-align: left;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 166px;
+    width: 50%;
+}
+
+#via-dieng-kulon-text{
+    text-align: left;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 166px;
+    width: 50%;
+}
+
+
+#via-kalilembu-text{
+    text-align: left;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 166px;
+    width: 50%;
+}
+
+#via-wates-text{
+    text-align: left;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 166px;
+    width: 50%;
+}
+
+.text-akhir-artikel{
+    margin-top: 35px;
+    margin-left: 65px;
+}
+
+/* Footer */
+footer {
+    background-color: #292828;
+    height: 300px;
+}
+
+.logo-in-footer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 10px;
+    left: 30px;
+}
+
+.logo-in-footer img {
+    height: 225px;
+    z-index: 20;
+}
+.copyright{
+    padding-top: 31px;
+}
+.copyright h4{
+    background-color: #5C693A;
+    color: #f9f9f9;
+    font-weight: 500;
+    font-size: medium;
+    padding-left: 20px;
+}
+
+.list-footer{
+    display: flex;
+    position: absolute;
+    top: 653.2vh;
+    left: 100vh;
+    color: #f9f9f9;
+    gap: 25px;
+    z-index: 200;
+}
+
+.list-footer h2{
+    font-size: small;
+    font-weight: 550;
+}
+.list-footer ul{
+    list-style: none;
+}
+
+.list-footer li{
+    margin-top: 7px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 40px;
+}
+
+#profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#user-name {
+    color: #f9f9f9;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+}

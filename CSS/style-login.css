@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+} *
+
+.button-exit {
+    position: absolute;
+    top: 20px; /* Jarak dari atas */
+    right: 20px; /* Jarak dari kanan (bukan left lagi) */
+    width: 50px; 
+    height: 50px;
+    background-color: #9ca18d; /* warna background seperti yang di gambar */
+    border: none;
+    border-radius: 50%; /* supaya bulat */
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* supaya tetap muncul di atas elemen lain */
+      
+}
+
+
+.container-login{
+    margin-top: -2%;
+    padding: 50px;
+    width: 550px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+body{
+    font-family: poppins, sans-serif;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+.gambar {
+    margin-top: 120px;
+    margin-bottom: 25px;
+}
+
+.gambar img{
+    width: 400px;
+}
+
+.sub-container{
+    position: relative;
+    top: -90px;
+}
+
+#log-button-goggle{
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    border-radius: 50px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#log-button-goggle img{
+    height:  20px;
+    margin-right: 10px;
+}
+
+.separator{
+    margin: 20px 0;
+    font-size: 14px;
+    color: #888;
+    display: flex; /* Menggunakan flexbox untuk mengatur garis dan teks */
+    align-items: center; /* Membuat teks berada di tengah garis vertikal */
+}
+
+.separator::before,
+.separator::after {
+    content: ''; /* Membuat elemen pseudo */
+    flex-grow: 1; /* Membuat garis memanjang mengisi ruang */
+    border-top: 1px solid #ccc; /* Gaya garis */
+    margin: 0 10px; /* Jarak antara garis dan teks */
+}
+
+.input-box{
+    margin-bottom: 20px 0;
+    width: 100%;
+}
+
+.input-field{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.lupa-sandi{
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.reset-sandi{
+    text-decoration: none;
+    color: #5C693AEB;
+}
+
+.button-loggin, .daftar-button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #5C693AEB;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.daftar-button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ffffffeb;
+    color: #5C693AEB;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    outline: 2px solid #5C693AEB;
+}
+
+.sign-up_text{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #888;
+}
+
+.back-home a{
+    color: black;
+    text-decoration: none;
+}

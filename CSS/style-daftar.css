@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+} 
+
+.back-to-before-page{
+    position: absolute;
+    top: 20px; /* Jarak dari atas */
+    left: 20px; /* Jarak dari kanan (bukan left lagi) */
+    width: 50px; 
+    height: 50px;
+    background-color: #9ca18d; /* warna background seperti yang di gambar */
+    border: none;
+    border-radius: 50%; /* supaya bulat */
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* supaya tetap muncul di atas elemen lain */
+}
+
+
+.button-exit {
+    position: absolute;
+    top: 20px; /* Jarak dari atas */
+    right: 20px; /* Jarak dari kanan (bukan left lagi) */
+    width: 50px; 
+    height: 50px;
+    background-color: #9ca18d; /* warna background seperti yang di gambar */
+    border: none;
+    border-radius: 50%; /* supaya bulat */
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* supaya tetap muncul di atas elemen lain */
+      
+}
+.logo{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+
+.container-daftar{
+    padding: 50px;
+    width: 550px;
+    /* align-items: center;
+    justify-content: center; */
+    text-align: center; 
+    margin-right: 100px ;
+    text-decoration: none;
+    
+}
+
+body{
+    font-family: poppins, sans-serif;
+    background-color: #FFFFFF;
+    
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100vh;
+    float: right;
+}
+
+#reg-button-goggle{
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;    
+    border-radius: 50px;
+    font-size: 16px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: 1;
+}
+
+#reg-button-goggle img{
+    height:  20px;
+    margin-right: 10px;
+}
+
+.separator{
+    margin: 20px 0;
+    font-size: 14px;
+    color: #888;
+    display: flex; /* Menggunakan flexbox untuk mengatur garis dan teks */
+    align-items: center; /* Membuat teks berada di tengah garis vertikal */
+}
+
+.separator::before,
+.separator::after {
+    content: ''; /* Membuat elemen pseudo */
+    flex-grow: 1; /* Membuat garis memanjang mengisi ruang */
+    border-top: 1px solid #ccc; /* Gaya garis */
+    margin: 0 10px; /* Jarak antara garis dan teks */
+}
+
+
+.input-box{
+    margin-bottom: 20px 0;
+    width: 100%;
+}
+
+.input-field{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.syarat-ketentuan{
+    text-decoration: none;
+    color:  #7f8c6f;
+}
+
+.daftar-button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #5C693A;
+    opacity: 92%;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.button-loggin{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ffffffeb;
+   
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    outline: 2px solid #5C693AEB;
+}
+
+.button-loggin a{
+    text-decoration: none;
+    color: #5C693AEB;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: none;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.modal-content p{
+    font-size: 12px;
+}
+.modal-content button {
+    background-color: #5C693A;
+    color: white;
+    border: none;
+    padding: 5px 70px;
+    border-radius: 25px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+/* @media (max-width : 768px){
+    body{
+        width: 50%;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+} */

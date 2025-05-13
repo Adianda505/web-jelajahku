@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/script-daftar-goggle.js" defer type="module"></script>
+    <title>Daftar</title>
+    <link rel="stylesheet" href="../CSS/style-daftar.css">
+</head>
+<body>
+
+    <a href="../HTML/login.html">
+    <button class="back-to-before-page"><</button>
+    </a>
+    <a href="../HTML/beranda.html">
+    <button class="button-exit">X</button>
+    </a>
+    <div class="logo">
+        <img src="../ASSET/JELAJAHKU_Black_Font.png">
+    </div>
+    
+<div class="container-daftar">
+
+<!-- login dengan Goggle -->
+<div class="log-goggle">
+    <button id="reg-button-goggle">
+        <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="Icon Goggle"> Daftar dengan Goggle
+    </button>
+</div>
+
+<br>    
+<p class="separator" style="text-align: center;">Atau dengan</p>
+<br>
+<!-- Nama -->
+<form action="">
+<div>
+    <div class="input-box">
+        <input type="text" id="nama" class="input-field" placeholder="Nama" autocomplete="off" required>
+</div>
+</div>
+<br>
+
+<!-- Email -->
+<div>
+    <div class="input-box">
+        <input type="text" id="email"  class="input-field" placeholder="Email" autocomplete="off" required>
+</div>
+</div>
+<br>
+
+<div>
+    <div class="input-box">
+        <input type="text" id="nohp" class="input-field" placeholder="No HP" autocomplete="off" required>
+</div>
+</div>
+<br>
+
+<!-- Password -->
+<div class="input-box">
+    <input type="password" id="password" class="input-field" placeholder="Password" autocomplete="off" required>
+</div>
+<br>
+<!-- Repeat Password -->
+<div class="input-box">
+    <input type="password" id="ulangiPassword" class="input-field" placeholder="Ulangi Password" autocomplete="off" required>
+</div>
+<br>
+<!-- syarat dan ketentuan -->
+ <input type="checkbox" id="syarat">
+ <label for="syarat">Saya setuju dengan <a href="#" style="text-decoration: none; color: #888 ;">Syarat dan ketentuan</a> </label>
+<br>
+ <!-- Daftar -->
+ <button class="daftar-button">Daftar</button>
+ <br>
+ 
+ <p>Atau sudah memiliki akun?</p>
+ <!-- Masuk -->
+ <button class="button-loggin"><a href="../HTML/login.html">Masuk</a></button>
+</div>
+</form>
+<!-- Modal Notifikasi Berhasil -->
+<div id="successModal" class="modal">
+    <div class="modal-content">
+      <img src="../ASSET/JELAJAHKU_Black_Font.png" style="width: 150px;" alt="Logo"> <!-- Ganti logo jika perlu -->
+      <h2>Selamat</h2>
+      <p>Akun berhasil dibuat, silakan masuk</p>
+      <button onclick="redirectToLogin()">Tutup</button>
+    </div>
+  </div>
+
+  <!-- <script src="../JS/script-sukses-daftar.js"></script> -->
+</body>
+</html>

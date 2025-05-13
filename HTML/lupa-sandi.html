@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset kata sandi</title>
+    <link rel="stylesheet" href="../CSS/style-lupa_sandi.css">
+</head>
+<body>
+
+    <a href="../HTML/login.html">
+    <button class="back-to-before-page"><</button>
+    </a>
+    <a href="../HTML/beranda.html">
+    <button class="button-exit">X</button>
+    </a>  
+    <div class="logo">
+        <img src="../ASSET/JELAJAHKU_Black_Font.png" alt="">
+    </div>
+    <div>
+    
+    <div class="container">
+    <section class="judul">
+    <h2>Lupa Kata Sandi Anda</h2>
+    </section>
+
+    <section class="penjelasan">
+    <p class="text">Masukkan alamat email Anda yang terkait dengan akun Anda dan kami akan mengirimkan 
+        tautan untuk mengatur ulang kata sandi Anda
+    </p>
+    </section>
+
+    <section class="container-reset">
+        <div class="email-input">
+            <input type="text" class="input-field" placeholder="Email" autocomplete="off" required>
+        </div>
+
+        <div class="ganti-button">
+        <button class="ganti">Ganti</button>
+        </div>
+    </section>
+  
+
+    <section class="forgot-email">
+
+        <p class="text-forgot-email">Lupa dengan email login Anda? <a href="../HTML/daftar.html"> Buat Akun Baru</a></p>
+    </section>
+</div>
+
+<div id="successModal" class="modal">
+    <div class="modal-content">
+      <img src="../ASSET/JELAJAHKU_Black_Font.png" style="width: 150px;" alt="Logo"> <!-- Ganti logo jika perlu -->
+      <h2>Selamat</h2>
+      <p>Link ganti kata sandi sudah dikirim ke email Anda</p>
+      <button onclick="redirectToLogin()">Tutup</button>
+    </div>
+  </div>
+  <script type="module" src="../JS/script-kirim-email-lupa-password.js"></script>
+  <script>
+    function redirectToLogin() {
+  // Misalnya arahkan ke halaman login
+  window.location.href = "../HTML/login.html";
+}
+
+  </script>
+</body>
+</html>

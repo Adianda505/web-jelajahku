@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+header{
+    /* margin: 0;
+    padding: 0; */
+    text-decoration: none;
+    background-color: #292828;
+    /* color: #ffffff; */
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+    z-index: 20;
+}
+
+.search input{
+    width: 350px;
+    padding: 10px 15px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    margin-left: -10vh;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li{
+    margin-left: 25px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #f9f9f9;
+    font-weight: bold;
+}
+
+.log-or-reg a{
+    text-decoration: none ;
+    color: rgb(0, 0, 0);
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin-right: 50px;
+}
+
+.link-page-before{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    position: relative;
+    left: 5vw;
+}
+
+.link-page-before a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.judul-artikel{
+    text-align: center;
+}
+
+.img-object-artikel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.img-object-artikel img{
+    width: 1000px;
+    height: 500px;
+    border-radius: 20px;
+    margin-top: -20vh;
+    /* margin-bottom: 150px; */
+}
+
+.rating{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 115vh;
+    right: 45vh;
+    font-size: 50px;
+    color: #FFD700;
+}
+
+.rating-angka{
+    font-size: 45px;
+    position: absolute;
+    top: 3.7vh;
+    left: 35vh;
+}
+
+/* .tentang-gunung{
+    background-color:;
+} */
+
+.penjelasan{
+    background-color: #5C693A;
+    color: #f9f9f9;
+    height: 20vh;
+}
+
+.penjelasan h1{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.alamat-lokasi{
+    text-align: center;
+}
+
+.alamat-lokasi h1{
+    font-size: 29px;
+}
+
+#konten{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 65px;
+    font-size: 15px;
+}
+
+.garis-pemisah{
+    background-color: #5C693A;
+    opacity: 41%;
+    height: 13px;
+}
+
+.garis-pemisah h1{
+    opacity: 0;
+}
+
+.tiket-sect{
+    text-align: center;
+    justify-content: center;
+}
+
+.tiket-sect img{
+    width: 50%;
+}
+
+.penjelasan-tiket{
+    text-align: left;
+    padding-top: 20px;
+    margin-left: 65px;
+    line-height: 2;
+    font-size: 15px;
+}
+
+.infor-pendakian{
+    text-align: center;
+}
+
+.penjelasan-infor{
+    text-align: left;
+    margin-left: 65px;
+}
+
+.info-jalur-pendakian{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(445px, 1fr));
+    justify-content: center;
+    gap: 20px;
+}
+
+.sub-infor-jalur-pendakian{
+   text-align: center;
+}
+
+.sub-infor-jalur-pendakian h1{
+    /* background-color: #395052;
+    background-size: 25px 25px;
+    height: 25px; */
+    font-size: 32px;
+}
+
+.number{
+    text-align: center;
+    /* background-color: #395052; */
+    /* width: 25px; */
+    height: 25px;
+    border-radius: 100px;
+}
+
+.info-jalur-pendakian img{
+    width: 50%;
+}
+
+#via-vatak-text{
+    text-align: left;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 166px;
+    width: 400px;
+}
+
+#via-dieng-kulon-text{
+    text-align: left;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 166px;
+    width: 400px;
+}
+
+
+#via-kalilembu-text{
+    text-align: left;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 166px;
+    width: 400px;
+}
+
+#via-wates-text{
+    text-align: left;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 166px;
+    width: 400px;
+}
+
+.text-akhir-artikel{
+    margin-top: 35px;
+    margin-left: 65px;
+}
